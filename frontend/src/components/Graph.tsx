@@ -37,8 +37,18 @@ export default function DashboardGraph({
           <YAxis />
           <Tooltip />
           <Legend />
-          <Bar dataKey="storeStock" name="Store Stock" fill="midnightblue" />
-          <Bar dataKey="warehouseStock" name="Warehouse Stock" fill="green" />
+          <Bar
+            dataKey="storeStock"
+            name="Store Stock"
+            stackId="a"
+            fill="midnightblue"
+          />
+          <Bar
+            dataKey="warehouseStock"
+            stackId="a"
+            name="Warehouse Stock"
+            fill="green"
+          />
           <Bar dataKey="overallSoldStocks" name="Stocks Sold" fill="red" />
         </BarChart>
       ) : (
